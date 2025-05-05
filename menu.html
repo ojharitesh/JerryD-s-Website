@@ -137,6 +137,117 @@
             margin-top: 1rem;
             font-size: 0.9rem;
         }
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 0.3rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+            }
+
+            .logo-container {
+                margin-bottom: 0;
+                gap: 0.3rem;
+                align-items: center;
+            }
+
+            .logo-container img {
+                height: 35px;
+                width: auto;
+            }
+
+            .logo-container h1 {
+                font-size: 1rem;
+                white-space: nowrap;
+            }
+
+            nav {
+                margin-left: 0;
+            }
+
+            nav ul {
+                gap: 0.3rem;
+                justify-content: flex-end;
+                flex-wrap: nowrap;
+            }
+
+            nav ul li a {
+                font-size: 0.7rem;
+                padding: 0.2rem 0.4rem;
+            }
+
+            .menu-section {
+                padding: 2rem 1rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .menu-item {
+                padding: 1rem;
+            }
+
+            .menu-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .menu-item p {
+                font-size: 0.9rem;
+            }
+
+            .price {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 0.2rem;
+            }
+
+            .logo-container {
+                gap: 0.2rem;
+            }
+
+            .logo-container img {
+                height: 30px;
+            }
+
+            .logo-container h1 {
+                font-size: 0.9rem;
+            }
+
+            nav ul {
+                gap: 0.2rem;
+            }
+
+            nav ul li a {
+                font-size: 0.65rem;
+                padding: 0.15rem 0.3rem;
+            }
+
+            .menu-item {
+                padding: 0.8rem;
+            }
+
+            .menu-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .menu-item p {
+                font-size: 0.85rem;
+            }
+
+            .price {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>

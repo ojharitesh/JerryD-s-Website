@@ -254,6 +254,126 @@
     .gallery-item {
       cursor: pointer;
     }
+
+    /* Mobile Responsive Styles */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 0.3rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      .logo-container {
+        margin-bottom: 0;
+        gap: 0.3rem;
+        align-items: center;
+      }
+
+      .logo-container img {
+        height: 35px;
+        width: auto;
+      }
+
+      .logo-container h1 {
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+
+      nav {
+        margin-left: 0;
+      }
+
+      nav ul {
+        gap: 0.3rem;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+      }
+
+      nav ul li a {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .features {
+        padding: 2rem 1rem;
+      }
+
+      .feature-card {
+        padding: 1rem;
+      }
+
+      .feature-card h3 {
+        font-size: 1.2rem;
+      }
+
+      .feature-card p {
+        font-size: 0.9rem;
+      }
+
+      .gallery {
+        padding: 2rem 1rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+      }
+
+      .hours {
+        padding: 2rem 1rem;
+      }
+
+      .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    /* Small Mobile Devices */
+    @media screen and (max-width: 480px) {
+      header {
+        padding: 0.2rem;
+      }
+
+      .logo-container {
+        gap: 0.2rem;
+      }
+
+      .logo-container img {
+        height: 30px;
+      }
+
+      .logo-container h1 {
+        font-size: 0.9rem;
+      }
+
+      nav ul {
+        gap: 0.2rem;
+      }
+
+      nav ul li a {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.3rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
