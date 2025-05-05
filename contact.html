@@ -202,21 +202,24 @@
         /* Mobile Responsive Styles */
         @media screen and (max-width: 768px) {
             header {
-                padding: 1rem;
-                flex-direction: column;
+                padding: 0.5rem;
+                flex-direction: row;
                 align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
             }
 
             .logo-container {
-                margin-bottom: 1rem;
+                margin-bottom: 0;
+                gap: 0.5rem;
             }
 
             .logo-container img {
-                height: 60px;
+                height: 40px;
             }
 
             .logo-container h1 {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             nav {
@@ -224,14 +227,14 @@
             }
 
             nav ul {
-                gap: 1rem;
-                justify-content: center;
-                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: flex-end;
+                flex-wrap: nowrap;
             }
 
             nav ul li a {
-                font-size: 0.9rem;
-                padding: 0.5rem;
+                font-size: 0.8rem;
+                padding: 0.3rem;
             }
 
             main {
@@ -296,13 +299,25 @@
 
         /* Small Mobile Devices */
         @media screen and (max-width: 480px) {
+            header {
+                padding: 0.5rem;
+            }
+
             .logo-container h1 {
-                font-size: 1.3rem;
+                font-size: 1rem;
+            }
+
+            .logo-container img {
+                height: 35px;
+            }
+
+            nav ul {
+                gap: 0.3rem;
             }
 
             nav ul li a {
-                font-size: 0.8rem;
-                padding: 0.4rem;
+                font-size: 0.7rem;
+                padding: 0.2rem;
             }
 
             .contact-item p {
