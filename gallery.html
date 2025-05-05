@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jerry D's Saloon - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerry D's Saloon - Gallery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -13,6 +13,7 @@
       padding: 0;
       background-color: #f5f5f5;
     }
+
     header {
       background-color: #824606;
       color: white;
@@ -23,15 +24,18 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .logo-container {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
+
     .logo-container img {
       height: 80px;
       width: auto;
     }
+
     .logo-container h1 {
       margin: 0;
       font-size: 1.8rem;
@@ -40,9 +44,11 @@
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
+
     nav {
       margin-left: auto;
     }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -50,209 +56,83 @@
       display: flex;
       gap: 2rem;
     }
+
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     nav ul li a:hover {
       transform: translateY(-2px);
       opacity: 0.9;
     }
-    .hero {
-      position: relative;
-      height: 80vh;
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/people1.JPG');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-    .hero-content {
-      max-width: 800px;
-      padding: 2rem;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .hero p {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: #824606;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .cta-button:hover {
-      background-color: #6b3a05;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
+
+    .gallery-section {
       padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .feature-card {
       background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
+    }
+
+    .gallery-section h2 {
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    .feature-icon {
+      color: #824606;
+      margin-bottom: 2rem;
       font-size: 2.5rem;
-      color: #824606;
-      margin-bottom: 1rem;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Playfair Display', serif;
     }
-    .feature-card:hover .feature-icon {
-      transform: scale(1.1);
-    }
-    .feature-card h3 {
-      color: #824606;
-      margin-bottom: 1rem;
-    }
-    .feature-card p {
-      color: #666;
-      line-height: 1.6;
-    }
-    .gallery {
-      padding: 4rem 2rem;
-      background-color: white;
-    }
-    .gallery h2 {
-      text-align: center;
-      color: #824606;
-      margin-bottom: 2rem;
-    }
+
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
       max-width: 1200px;
       margin: 0 auto;
     }
+
     .gallery-item {
       position: relative;
       overflow: hidden;
       border-radius: 8px;
       aspect-ratio: 1;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     .gallery-item:hover img {
       transform: scale(1.1);
       filter: brightness(1.05);
     }
-    .hours {
-      background-color: white;
-      border-radius: 8px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .hours h2 {
-      color: #824606;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-      text-align: center;
-    }
-    .hours-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-      margin-bottom: 2rem;
-    }
-    .hours-item {
-      background-color: #f8f8f8;
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
       padding: 1rem;
-      border-radius: 8px;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      text-align: center;
-    }
-    .hours-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .hours-item h3 {
-      color: #824606;
-      margin: 0 0 0.5rem 0;
-      font-size: 1.2rem;
-    }
-    .hours-item p {
-      margin: 0;
-      color: #666;
-      font-size: 1rem;
-    }
-    .hours .cta-button {
-      display: inline-block;
-      background-color: #824606;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      margin-top: 1rem;
-    }
-    .hours .cta-button:hover {
-      background-color: #6b3a05;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      background-color: #333;
-      color: white;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    @media (max-width: 768px) {
-      .features {
-        grid-template-columns: 1fr;
-      }
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .hours-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero h1 {
-        font-size: 2.5rem;
-      }
+    .gallery-item:hover .gallery-caption {
+      transform: translateY(0);
     }
-    
+
     /* Lightbox styles */
     .lightbox {
       display: none;
@@ -288,8 +168,11 @@
       cursor: pointer;
     }
 
-    .gallery-item {
-      cursor: pointer;
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #333;
+      color: white;
     }
 
     /* Mobile Responsive Styles */
@@ -395,11 +278,6 @@
         padding: 0.15rem 0.2rem;
       }
     }
-
-    /* Add this to your existing styles */
-    .reservation-link {
-      margin-left: 1rem;
-    }
   </style>
 </head>
 <body>
@@ -419,76 +297,33 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Jerry D's Saloon</h1>
-      <p>Experience the best local dishes and a warm, friendly atmosphere</p>
-      <a href="menu.html" class="cta-button">Explore Our Menu</a>
-      <a href="tel:410-665-3351" class="cta-button reservation-link">Make a Reservation</a>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="feature-card">
-      <div class="feature-icon">
-        <i class="fas fa-utensils"></i>
-      </div>
-      <h3>Delicious Food</h3>
-      <p>Enjoy our famous Maryland-style crab cakes and other local favorites</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <i class="fas fa-glass-cheers"></i>
-      </div>
-      <h3>Great Atmosphere</h3>
-      <p>Cozy tavern-style setting perfect for friends and family</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">
-        <i class="fas fa-clock"></i>
-      </div>
-      <h3>Open Daily</h3>
-      <p>From brunch to late night, we're here to serve you</p>
-    </div>
-  </section>
-
-  <section class="gallery">
+  <section class="gallery-section">
     <h2>Our Gallery</h2>
     <div class="gallery-grid">
       <div class="gallery-item">
         <img src="images/IMG_5721.JPG" alt="Delicious Food">
+        <div class="gallery-caption">Our Signature Dishes</div>
       </div>
       <div class="gallery-item">
         <img src="images/IMG_5722.JPG" alt="Restaurant Interior">
+        <div class="gallery-caption">Cozy Interior</div>
       </div>
       <div class="gallery-item">
         <img src="images/IMG_5723.JPG" alt="Special Events">
+        <div class="gallery-caption">Special Events</div>
       </div>
       <div class="gallery-item">
         <img src="images/people3.JPG" alt="Happy Customers">
+        <div class="gallery-caption">Happy Customers</div>
       </div>
-    </div>
-  </section>
-
-
-  <section class="hours">
-    <div class="hours-content">
-      <h2>Hours of Operation</h2>
-      <div class="hours-grid">
-        <div class="hours-item">
-          <h3>Monday - Friday</h3>
-          <p>11:00 AM - 11:00 PM</p>
-        </div>
-        <div class="hours-item">
-          <h3>Saturday</h3>
-          <p>9:00 AM - 2:00 AM</p>
-        </div>
-        <div class="hours-item">
-          <h3>Sunday</h3>
-          <p>9:00 AM - 12:00 AM</p>
-        </div>
+      <div class="gallery-item">
+        <img src="images/people1.JPG" alt="Restaurant Atmosphere">
+        <div class="gallery-caption">Warm Atmosphere</div>
       </div>
-      <a href="contact.html" class="cta-button">Get Directions</a>
+      <div class="gallery-item">
+        <img src="images/people2.JPG" alt="Dining Experience">
+        <div class="gallery-caption">Dining Experience</div>
+      </div>
     </div>
   </section>
 
@@ -496,7 +331,7 @@
     <p>&copy; 2025 Jerry D's Saloon</p>
   </footer>
 
-  <!-- Add lightbox div at the end of body -->
+  <!-- Lightbox -->
   <div id="lightbox" class="lightbox">
     <span class="lightbox-close">&times;</span>
     <img id="lightbox-img" src="" alt="Enlarged image">
@@ -538,4 +373,4 @@
     }
   </script>
 </body>
-</html>
+</html> 
