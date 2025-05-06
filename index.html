@@ -397,8 +397,14 @@
     }
 
     /* Add this to your existing styles */
-    .reservation-link {
-      margin-left: 1rem;
+    @media (max-width: 768px) {
+      .hero-content a.cta-button:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      
+      .reservation-link {
+        margin-left: 0; /* remove default left margin */
+      }
     }
   </style>
 </head>
