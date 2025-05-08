@@ -20,6 +20,7 @@ This repository contains the source code for our responsive, single-page (or mul
 - HTML5
 - CSS3
 - JavaScript
+- Bought domain from [PokrBurn](https://www.porkburn.com/)
 - [Formspree.io](https://formspree.io/) – for form submissions
 - [GitHub Pages](https://pages.github.com/) – for hosting
 
