@@ -44,3 +44,46 @@
     font-size: 1rem;
   }
 }
+
+.menu-item {
+  display: flex;
+  justify-content: space-between; /* Align name/description on the left and price on the right */
+  align-items: flex-start; /* Align items at the top */
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #eee;
+  gap: 1rem; /* Add spacing between name/description and price */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h4 {
+  color: #824606;
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  flex: 1; /* Allow the name/description to take up available space */
+}
+
+.menu-item p {
+  color: #666;
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1; /* Allow the description to take up available space */
+}
+
+.price {
+  color: #824606;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+  white-space: nowrap; /* Prevent the price from wrapping */
+  margin-left: 1rem; /* Add spacing between the description and price */
+}
