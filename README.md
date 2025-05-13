@@ -6,7 +6,7 @@ This repository contains the source code for our responsive, single-page (or mul
 
 ## 🌐 Live Website
 👉 [Visit the site](jerrydsaloon.com)
-
+    email: info@jerrydsaloon.com
 ## 📁 Features
 
 - 🍽️ Full digital restaurant menu
