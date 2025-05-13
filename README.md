@@ -1,6 +1,6 @@
 # JerryD-s-Website
 
-Welcome to the official website of **Jerry D's Saloon**, a cozy and lively neighborhood restaurant located in Parkville, Maryland.
+Welcome to the official website of **Jerry D's Saloon**, a cozy and lively neighborhood restaurant located in Parkville, Maryland. I created this website to showcase the restaurant's menu, location, and contact information. The site is designed to be user-friendly and responsive, ensuring a seamless experience for visitors on both desktop and mobile devices.
 
 This repository contains the source code for our responsive, single-page (or multi-page) static website built using HTML, CSS, and JavaScript, and hosted with GitHub Pages.
 
@@ -20,9 +20,8 @@ This repository contains the source code for our responsive, single-page (or mul
 - HTML5
 - CSS3
 - JavaScript
-- Bought domain from [PokrBurn](https://www.porkburn.com/)
 - [Formspree.io](https://formspree.io/) – for form submissions
-- [GitHub Pages](https://pages.github.com/) – for hosting
+- [GitHub Pages](https://pages.github.com/),Bought domain from [PokrBurn](https://www.porkburn.com/) – for hosting
 
 ## 🛠️ How to Run Locally
 
